@@ -5,26 +5,26 @@ import java.util.Scanner;
 public class C3_ArtikYilIfCozum {
 
 	public static void main(String[] args) {
-		// kullanýcýdan yýl iste 4 bolunmezse artrýk deðil
-		// 4 bolunur 100 e bolunmezse artýk
-		// 100 e bolunenlerden sadece 400 e  bolunenler artýk
+		// kullanï¿½cï¿½dan yï¿½l iste 4 bolunmezse artrï¿½k deï¿½il
+		// 4 bolunur 100 e bolunmezse artï¿½k
+		// 100 e bolunenlerden sadece 400 e  bolunenler artï¿½k
 
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.println("lutfen yýl giriniz");
+		System.out.println("lutfen yil giriniz");
 		
 		int yil = scan.nextInt();
 		
-		if (yil%4==0 && yil%100 != 0) {// 4 e bölünür 100e bölünmezse artýk 
+		if (yil%4==0 && yil%100 != 0) {// 4 e bï¿½lï¿½nï¿½r 100e bï¿½lï¿½nmezse artï¿½k 
 			
-			System.out.println("artýk yik");
+			System.out.println("artï¿½k yik");
 			
 		} else if (yil%4==0 && yil%100==0 && yil%400==0){ // 4
 
 			System.out.println("artik yil");
 		}else {
 			
-			System.out.println("artýk deðil");
+			System.out.println("artï¿½k deï¿½il");
 		}
 		
 		
